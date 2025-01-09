@@ -5,18 +5,18 @@ are examples of clinical terminology codes used in healthcare to standardize the
 observations, allowing for accurate data exchange between different systems and healthcare providers.
 
 At work, I use SNOMED and LOINC almost everyday. I regularly reference only the codes housed in our Maven® Disease Surveillance System
-I exported the SNOMED and LOINC references codes from Maven but they are formatted in XML files, rendering them difficult to read and use
+Before I began, I exported the SNOMED and LOINC references codes from Maven but they are formatted in XML, rendering them difficult to read and use
 for adhoc and large scale projects.
 
 Instead of scrolling for hours or using the CTRL + F function to find conditions or lab tests,
 I wrote this basic code to:
-1. parse only the fields of interest from the imported file
+1. parse only the fields of interest from the .xml file
 2. format the contents into columns
 3. save and export/download the output as a .csv file
 
 From there I use the output for data validation and ETL processes across systems.
 This is the code for SNOMED codes extraction.
-I use the same codes for LOINC codes extraction by just changing the file path and renaming the desired export file
+I used the same codes for LOINC codes extraction by just changing the file path and renaming the desired export file
 
 """
 
