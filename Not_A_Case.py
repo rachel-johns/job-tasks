@@ -3,7 +3,7 @@
 # Purpose: Reviews every EDHR record in the IBM cloud production database
 # and only retrieve case id and case log data for non-surgical cases.
 # Criterion for a record to be considered a true surgical case is seeing foot pedeal action.
-# I want to know which cases NO NOT contain "FIRST_FP_ACTIVE" (this is what begins a surgery).
+# I want to know which cases DO NOT contain "FIRST_FP_ACTIVE" (this is what begins a surgery).
 # Output is converted into a flat .csv file for export into Excel.
 # It will be reviewed and used to determine how much junk is in the database.
 # I will review each case log to determine if it was a demo/test, manufacturing error, or false start/user error.
